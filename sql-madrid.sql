@@ -105,7 +105,7 @@ FROM pricing
 	JOIN features ON main_info.feature_id = features.feature_id;
     
     
--- 5 in this query we can look at many of the caracjetristics of some of the properties while they have been ranked with the price per square metre
+-- 5 in this query we can look at many of the characetristics of some of the properties while they have been ranked with the price per square metre
 
 WITH RankedProperties AS (
     SELECT
