@@ -37,7 +37,7 @@ ALTER TABLE property_type
 		FOREIGN KEY (price_id) REFERENCES pricing(price_id);
 
 
--- Now that all the connections are stablished i will proceed with the queries in order to look for the needed data.
+-- Now that all the connections are stablished I will proceed with the queries in order to look for the needed data.
 -- In the following query we can look at the average buy and rent prices  by the house and neighborhood id.
 SELECT
     location.neighborhood_id,
@@ -50,7 +50,7 @@ FROM pricing
 	JOIN location ON main_info.location_id = location.location_id
 GROUP BY location.neighborhood_id, property_type.house_type_id;
 
--- In this second query i will be looking for all the basic features off the properties along with its buy and rent prices
+-- In this second query I will be looking for all the basic features off the properties along with its buy and rent prices
 SELECT
 	main_info.id,
     features.has_lift,
